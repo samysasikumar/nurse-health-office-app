@@ -6,11 +6,6 @@ in partnership with our school's health office.
 
 ---
 
-## 🌐 Live Demo
-> Coming soon — will be hosted on GitHub Pages
-
----
-
 ## 📋 About the Project
 
 This app was designed to support our school nurse by replacing paper-based visit logs  
