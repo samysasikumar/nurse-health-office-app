@@ -1,5 +1,4 @@
 # 🏥 HealthOffice — School Health Management App
-
 A web-based health office management tool built by students, for schools.  
 Developed as a collaboration between **Girls Who Code** and **Coding for Medicine** clubs,  
 in partnership with our school's health office.
@@ -7,7 +6,8 @@ in partnership with our school's health office.
 ---
 
 ## 🌐 Live Demo
-> Coming soon — will be hosted on GitHub Pages
+
+**[samysasikumar.github.io/nurse-health-office-app](https://samysasikumar.github.io/nurse-health-office-app)**
 
 ---
 
@@ -81,8 +81,8 @@ open index.html
 ```
 nurse-health-office-app/
 │
-├── index.html       # Main app (single-file architecture)
-└── README.md        # Project documentation
+├── index.html    # Main app (single-file architecture)
+└── README.md     # Project documentation
 ```
 
 ---
@@ -109,4 +109,5 @@ A collaboration between **Girls Who Code** and **Coding for Medicine** clubs.
 ---
 
 ## 📄 License
+
 MIT License — free to use, adapt, and build on.
