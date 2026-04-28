@@ -41,7 +41,6 @@
       font-size: 14px;
     }
 
-    /* LAYOUT */
     .app { display: flex; min-height: 100vh; }
 
     /* SIDEBAR */
@@ -166,12 +165,7 @@
     .nurse-role { font-size: 0.65rem; color: rgba(255,255,255,0.4); }
 
     /* MAIN */
-    .main {
-      margin-left: 240px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
+    .main { margin-left: 240px; flex: 1; display: flex; flex-direction: column; }
 
     /* TOPBAR */
     .topbar {
@@ -194,12 +188,7 @@
       color: var(--text);
     }
 
-    .topbar-left p {
-      font-size: 0.75rem;
-      color: var(--muted);
-      margin-top: 0.05rem;
-    }
-
+    .topbar-left p { font-size: 0.75rem; color: var(--muted); margin-top: 0.05rem; }
     .topbar-right { display: flex; align-items: center; gap: 0.75rem; }
 
     .topbar-date {
@@ -253,17 +242,8 @@
       margin-bottom: 0.35rem;
     }
 
-    .stat-card .stat-sub {
-      font-size: 0.72rem;
-      color: var(--muted);
-    }
-
-    .stat-card .stat-dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      display: inline-block;
-      margin-right: 0.3rem;
-    }
+    .stat-card .stat-sub { font-size: 0.72rem; color: var(--muted); }
+    .stat-card .stat-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 0.3rem; }
 
     /* CARDS */
     .card {
@@ -282,13 +262,7 @@
       justify-content: space-between;
     }
 
-    .card-title {
-      font-family: 'Fraunces', serif;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--text);
-    }
-
+    .card-title { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 600; color: var(--text); }
     .card-body { padding: 1.5rem; }
 
     /* BUTTONS */
@@ -306,31 +280,13 @@
       gap: 0.4rem;
     }
 
-    .btn-primary {
-      background: var(--green2);
-      color: white;
-    }
+    .btn-primary { background: var(--green2); color: white; }
     .btn-primary:hover { background: var(--green); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(64,145,108,0.3); }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--green);
-      border: 1px solid var(--border2);
-    }
+    .btn-outline { background: transparent; color: var(--green); border: 1px solid var(--border2); }
     .btn-outline:hover { border-color: var(--green2); background: var(--green4); }
-
-    .btn-ghost {
-      background: transparent;
-      color: var(--muted);
-      padding: 0.4rem 0.7rem;
-    }
+    .btn-ghost { background: transparent; color: var(--muted); padding: 0.4rem 0.7rem; }
     .btn-ghost:hover { background: var(--surface2); color: var(--text); }
-
-    .btn-danger {
-      background: var(--red2);
-      color: var(--red);
-      border: 1px solid #f5c6c0;
-    }
+    .btn-danger { background: var(--red2); color: var(--red); border: 1px solid #f5c6c0; }
     .btn-danger:hover { background: #fad4d0; }
 
     /* BADGE */
@@ -350,12 +306,7 @@
 
     /* TABLE */
     .table-wrap { overflow-x: auto; }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
+    table { width: 100%; border-collapse: collapse; }
     thead th {
       font-family: 'DM Mono', monospace;
       font-size: 0.62rem;
@@ -368,36 +319,18 @@
       background: var(--surface2);
       font-weight: 500;
     }
-
-    tbody tr {
-      border-bottom: 1px solid var(--border);
-      transition: background 0.1s;
-    }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
     tbody tr:last-child { border-bottom: none; }
     tbody tr:hover { background: var(--surface2); }
-
-    tbody td {
-      padding: 0.85rem 1rem;
-      font-size: 0.82rem;
-      color: var(--text);
-      vertical-align: middle;
-    }
-
+    tbody td { padding: 0.85rem 1rem; font-size: 0.82rem; color: var(--text); vertical-align: middle; }
     .td-name { font-weight: 500; }
     .td-sub { font-size: 0.72rem; color: var(--muted); margin-top: 0.1rem; }
 
     /* FORM */
     .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .form-grid.three { grid-template-columns: 1fr 1fr 1fr; }
     .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
     .form-group.full { grid-column: 1 / -1; }
-
-    label {
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: var(--text);
-    }
-
+    label { font-size: 0.75rem; font-weight: 500; color: var(--text); }
     input, select, textarea {
       font-family: 'DM Sans', sans-serif;
       font-size: 0.85rem;
@@ -410,14 +343,11 @@
       transition: border-color 0.15s;
       width: 100%;
     }
-
     input:focus, select:focus, textarea:focus {
       border-color: var(--green2);
       box-shadow: 0 0 0 3px rgba(64,145,108,0.1);
     }
-
     textarea { resize: vertical; min-height: 80px; }
-
     .form-actions {
       display: flex;
       gap: 0.75rem;
@@ -439,7 +369,6 @@
       backdrop-filter: blur(2px);
     }
     .modal-overlay.open { display: flex; }
-
     .modal {
       background: var(--surface);
       border-radius: 16px;
@@ -450,12 +379,10 @@
       box-shadow: var(--shadow2);
       animation: modalIn 0.2s ease;
     }
-
     @keyframes modalIn {
       from { opacity: 0; transform: scale(0.96) translateY(8px); }
       to { opacity: 1; transform: scale(1) translateY(0); }
     }
-
     .modal-header {
       padding: 1.5rem;
       border-bottom: 1px solid var(--border);
@@ -463,16 +390,10 @@
       align-items: center;
       justify-content: space-between;
     }
-
-    .modal-title {
-      font-family: 'Fraunces', serif;
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-
+    .modal-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 600; }
     .modal-body { padding: 1.5rem; }
 
-    /* NOTIFICATION */
+    /* NOTIFICATION BANNER */
     .notif-banner {
       position: fixed;
       top: 1.25rem;
@@ -501,31 +422,18 @@
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
     .three-col { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; }
 
-    /* VISIT LOG SPECIFIC */
-    .visit-reason {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      font-size: 0.78rem;
-    }
-
     /* EMPTY STATE */
-    .empty-state {
-      text-align: center;
-      padding: 3rem 2rem;
-      color: var(--muted);
-    }
+    .empty-state { text-align: center; padding: 3rem 2rem; color: var(--muted); }
     .empty-state .empty-icon { font-size: 2.5rem; margin-bottom: 1rem; opacity: 0.5; }
     .empty-state p { font-size: 0.85rem; }
 
-    /* REPORT SECTION */
+    /* REPORT */
     .report-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
       margin-bottom: 1.5rem;
     }
-
     .report-metric {
       background: var(--surface2);
       border: 1px solid var(--border);
@@ -533,7 +441,6 @@
       padding: 1.25rem;
       text-align: center;
     }
-
     .report-metric .metric-val {
       font-family: 'Fraunces', serif;
       font-size: 2.2rem;
@@ -542,12 +449,7 @@
       line-height: 1;
       margin-bottom: 0.35rem;
     }
-
-    .report-metric .metric-label {
-      font-size: 0.72rem;
-      color: var(--muted);
-      font-weight: 500;
-    }
+    .report-metric .metric-label { font-size: 0.72rem; color: var(--muted); font-weight: 500; }
 
     .bar-chart { display: flex; flex-direction: column; gap: 0.6rem; }
     .bar-row { display: flex; align-items: center; gap: 0.75rem; }
@@ -559,20 +461,9 @@
     .section-gap { margin-bottom: 1.5rem; }
 
     /* NOTIFICATION LOG */
-    .notif-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.85rem;
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--border);
-    }
+    .notif-item { display: flex; align-items: flex-start; gap: 0.85rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
     .notif-item:last-child { border-bottom: none; }
-    .notif-dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      margin-top: 0.35rem;
-      flex-shrink: 0;
-    }
+    .notif-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 0.35rem; flex-shrink: 0; }
     .notif-dot.sent { background: var(--green2); }
     .notif-dot.pending { background: var(--amber); }
     .notif-content { flex: 1; }
@@ -664,9 +555,8 @@
     <!-- CONTENT -->
     <div class="content">
 
-      <!-- ========== DASHBOARD ========== -->
+      <!-- DASHBOARD -->
       <div class="page active" id="page-dashboard">
-
         <div class="stats-row">
           <div class="stat-card">
             <div class="stat-label">Today's Visits</div>
@@ -692,7 +582,6 @@
 
         <div class="three-col">
           <div>
-            <!-- RECENT VISITS -->
             <div class="card section-gap">
               <div class="card-header">
                 <span class="card-title">Recent Visits</span>
@@ -701,22 +590,10 @@
               <div class="table-wrap">
                 <table>
                   <thead>
-                    <tr>
-                      <th>Student</th>
-                      <th>Reason</th>
-                      <th>Time</th>
-                      <th>Status</th>
-                    </tr>
+                    <tr><th>Student</th><th>Reason</th><th>Time</th><th>Status</th></tr>
                   </thead>
                   <tbody id="dashboard-visits-table">
-                    <tr>
-                      <td colspan="4">
-                        <div class="empty-state">
-                          <div class="empty-icon">📋</div>
-                          <p>No visits logged yet. Click "+ Log Visit" to add one.</p>
-                        </div>
-                      </td>
-                    </tr>
+                    <tr><td colspan="4"><div class="empty-state"><div class="empty-icon">📋</div><p>No visits logged yet. Click "+ Log Visit" to add one.</p></div></td></tr>
                   </tbody>
                 </table>
               </div>
@@ -724,29 +601,17 @@
           </div>
 
           <div>
-            <!-- QUICK ACTIONS -->
             <div class="card section-gap">
-              <div class="card-header">
-                <span class="card-title">Quick Actions</span>
-              </div>
+              <div class="card-header"><span class="card-title">Quick Actions</span></div>
               <div class="card-body" style="display:flex;flex-direction:column;gap:0.75rem;">
-                <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="openLogModal()">
-                  📋 Log New Visit
-                </button>
-                <button class="btn btn-outline" style="width:100%;justify-content:center;" onclick="showPage('notifications')">
-                  🔔 Send Notification
-                </button>
-                <button class="btn btn-outline" style="width:100%;justify-content:center;" onclick="showPage('reports')">
-                  📊 View Reports
-                </button>
+                <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="openLogModal()">📋 Log New Visit</button>
+                <button class="btn btn-outline" style="width:100%;justify-content:center;" onclick="showPage('notifications')">🔔 Send Notification</button>
+                <button class="btn btn-outline" style="width:100%;justify-content:center;" onclick="showPage('reports')">📊 View Reports</button>
               </div>
             </div>
 
-            <!-- TOP REASONS -->
             <div class="card">
-              <div class="card-header">
-                <span class="card-title">Visit Reasons</span>
-              </div>
+              <div class="card-header"><span class="card-title">Visit Reasons</span></div>
               <div class="card-body">
                 <div class="bar-chart" id="reason-chart">
                   <p style="font-size:0.78rem;color:var(--muted);text-align:center;padding:1rem 0;">Log visits to see data</p>
@@ -755,10 +620,9 @@
             </div>
           </div>
         </div>
-
       </div>
 
-      <!-- ========== VISIT LOG ========== -->
+      <!-- VISIT LOG -->
       <div class="page" id="page-visits">
         <div class="card">
           <div class="card-header">
@@ -766,13 +630,8 @@
             <div style="display:flex;gap:0.5rem;align-items:center;">
               <select id="filter-reason" onchange="renderVisitsTable()" style="width:auto;font-size:0.78rem;padding:0.4rem 0.7rem;">
                 <option value="">All Reasons</option>
-                <option>Headache</option>
-                <option>Stomachache</option>
-                <option>Injury</option>
-                <option>Fever/Illness</option>
-                <option>Medication</option>
-                <option>Mental Health</option>
-                <option>Other</option>
+                <option>Headache</option><option>Stomachache</option><option>Injury</option>
+                <option>Fever/Illness</option><option>Medication</option><option>Mental Health</option><option>Other</option>
               </select>
               <button class="btn btn-primary" onclick="openLogModal()">+ Log Visit</button>
             </div>
@@ -780,40 +639,22 @@
           <div class="table-wrap">
             <table>
               <thead>
-                <tr>
-                  <th>Student Name</th>
-                  <th>Grade</th>
-                  <th>Reason</th>
-                  <th>Notes</th>
-                  <th>Time In</th>
-                  <th>Time Out</th>
-                  <th>Status</th>
-                  <th>Actions</th>
-                </tr>
+                <tr><th>Student Name</th><th>Grade</th><th>Reason</th><th>Notes</th><th>Time In</th><th>Time Out</th><th>Status</th><th>Actions</th></tr>
               </thead>
               <tbody id="visits-table-body">
-                <tr>
-                  <td colspan="8">
-                    <div class="empty-state">
-                      <div class="empty-icon">📋</div>
-                      <p>No visits logged yet.</p>
-                    </div>
-                  </td>
-                </tr>
+                <tr><td colspan="8"><div class="empty-state"><div class="empty-icon">📋</div><p>No visits logged yet.</p></div></td></tr>
               </tbody>
             </table>
           </div>
         </div>
       </div>
 
-      <!-- ========== NOTIFICATIONS ========== -->
+      <!-- NOTIFICATIONS -->
       <div class="page" id="page-notifications">
         <div class="two-col">
           <div>
             <div class="card section-gap">
-              <div class="card-header">
-                <span class="card-title">Send Notification</span>
-              </div>
+              <div class="card-header"><span class="card-title">Send Notification</span></div>
               <div class="card-body">
                 <div class="form-grid">
                   <div class="form-group">
@@ -829,10 +670,8 @@
                   <div class="form-group">
                     <label>Notify</label>
                     <select id="notif-recipient">
-                      <option>Parent / Guardian</option>
-                      <option>Teacher</option>
-                      <option>Parent & Teacher</option>
-                      <option>Admin</option>
+                      <option>Parent / Guardian</option><option>Teacher</option>
+                      <option>Parent & Teacher</option><option>Admin</option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -864,10 +703,7 @@
               </div>
               <div class="card-body" style="padding:0 1.5rem;">
                 <div id="notif-log">
-                  <div class="empty-state">
-                    <div class="empty-icon">🔔</div>
-                    <p>No notifications sent yet.</p>
-                  </div>
+                  <div class="empty-state"><div class="empty-icon">🔔</div><p>No notifications sent yet.</p></div>
                 </div>
               </div>
             </div>
@@ -875,7 +711,7 @@
         </div>
       </div>
 
-      <!-- ========== REPORTS ========== -->
+      <!-- REPORTS -->
       <div class="page" id="page-reports">
         <div class="card section-gap">
           <div class="card-header">
@@ -883,53 +719,30 @@
             <button class="btn btn-outline" onclick="printReport()">🖨️ Print / Export</button>
           </div>
           <div class="card-body">
-            <div class="report-grid" id="report-metrics">
-              <div class="report-metric">
-                <div class="metric-val" id="rpt-total">0</div>
-                <div class="metric-label">Total Visits</div>
-              </div>
-              <div class="report-metric">
-                <div class="metric-val" id="rpt-unique">0</div>
-                <div class="metric-label">Unique Students</div>
-              </div>
-              <div class="report-metric">
-                <div class="metric-val" id="rpt-notifs">0</div>
-                <div class="metric-label">Notifications Sent</div>
-              </div>
+            <div class="report-grid">
+              <div class="report-metric"><div class="metric-val" id="rpt-total">0</div><div class="metric-label">Total Visits</div></div>
+              <div class="report-metric"><div class="metric-val" id="rpt-unique">0</div><div class="metric-label">Unique Students</div></div>
+              <div class="report-metric"><div class="metric-val" id="rpt-notifs">0</div><div class="metric-label">Notifications Sent</div></div>
             </div>
-
             <div class="two-col">
               <div>
                 <p style="font-size:0.78rem;font-weight:600;color:var(--text);margin-bottom:1rem;">Visits by Reason</p>
-                <div class="bar-chart" id="report-bar-chart">
-                  <p style="font-size:0.78rem;color:var(--muted);">Log visits to generate report data.</p>
-                </div>
+                <div class="bar-chart" id="report-bar-chart"><p style="font-size:0.78rem;color:var(--muted);">Log visits to generate report data.</p></div>
               </div>
               <div>
                 <p style="font-size:0.78rem;font-weight:600;color:var(--text);margin-bottom:1rem;">Visits by Grade</p>
-                <div class="bar-chart" id="report-grade-chart">
-                  <p style="font-size:0.78rem;color:var(--muted);">Log visits to generate report data.</p>
-                </div>
+                <div class="bar-chart" id="report-grade-chart"><p style="font-size:0.78rem;color:var(--muted);">Log visits to generate report data.</p></div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-header">
-            <span class="card-title">Full Visit History</span>
-          </div>
+          <div class="card-header"><span class="card-title">Full Visit History</span></div>
           <div class="table-wrap">
             <table>
               <thead>
-                <tr>
-                  <th>Student</th>
-                  <th>Grade</th>
-                  <th>Reason</th>
-                  <th>Notes</th>
-                  <th>Date / Time</th>
-                  <th>Status</th>
-                </tr>
+                <tr><th>Student</th><th>Grade</th><th>Reason</th><th>Notes</th><th>Date / Time</th><th>Status</th></tr>
               </thead>
               <tbody id="report-table-body">
                 <tr><td colspan="6"><div class="empty-state"><div class="empty-icon">📊</div><p>No data yet.</p></div></td></tr>
@@ -939,11 +752,11 @@
         </div>
       </div>
 
-    </div><!-- /content -->
-  </div><!-- /main -->
-</div><!-- /app -->
+    </div>
+  </div>
+</div>
 
-<!-- ========== LOG VISIT MODAL ========== -->
+<!-- LOG VISIT MODAL -->
 <div class="modal-overlay" id="log-modal">
   <div class="modal">
     <div class="modal-header">
@@ -952,36 +765,20 @@
     </div>
     <div class="modal-body">
       <div class="form-grid">
-        <div class="form-group">
-          <label>Student First Name</label>
-          <input type="text" id="v-first" placeholder="First name" />
-        </div>
-        <div class="form-group">
-          <label>Student Last Name</label>
-          <input type="text" id="v-last" placeholder="Last name" />
-        </div>
+        <div class="form-group"><label>Student First Name</label><input type="text" id="v-first" placeholder="First name" /></div>
+        <div class="form-group"><label>Student Last Name</label><input type="text" id="v-last" placeholder="Last name" /></div>
         <div class="form-group">
           <label>Grade</label>
-          <select id="v-grade">
-            <option>9th</option><option>10th</option><option>11th</option><option>12th</option>
-          </select>
+          <select id="v-grade"><option>9th</option><option>10th</option><option>11th</option><option>12th</option></select>
         </div>
         <div class="form-group">
           <label>Reason for Visit</label>
           <select id="v-reason">
-            <option>Headache</option>
-            <option>Stomachache</option>
-            <option>Injury</option>
-            <option>Fever/Illness</option>
-            <option>Medication</option>
-            <option>Mental Health</option>
-            <option>Other</option>
+            <option>Headache</option><option>Stomachache</option><option>Injury</option>
+            <option>Fever/Illness</option><option>Medication</option><option>Mental Health</option><option>Other</option>
           </select>
         </div>
-        <div class="form-group">
-          <label>Time In</label>
-          <input type="time" id="v-timein" />
-        </div>
+        <div class="form-group"><label>Time In</label><input type="time" id="v-timein" /></div>
         <div class="form-group">
           <label>Outcome / Status</label>
           <select id="v-status">
@@ -991,10 +788,7 @@
             <option value="referred">Referred to Counselor</option>
           </select>
         </div>
-        <div class="form-group full">
-          <label>Notes</label>
-          <textarea id="v-notes" placeholder="Observations, treatment given, follow-up needed..."></textarea>
-        </div>
+        <div class="form-group full"><label>Notes</label><textarea id="v-notes" placeholder="Observations, treatment given, follow-up needed..."></textarea></div>
         <div class="form-group full" style="display:flex;align-items:center;gap:0.5rem;">
           <input type="checkbox" id="v-notify" style="width:auto;accent-color:var(--green2);" />
           <label for="v-notify" style="font-weight:400;cursor:pointer;">Send parent/guardian notification for this visit</label>
@@ -1008,21 +802,17 @@
   </div>
 </div>
 
-<!-- NOTIFICATION BANNER -->
 <div class="notif-banner" id="notif-banner">
   <span>📨</span>
   <span id="notif-banner-text"></span>
 </div>
 
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
 <script>
-  // ---- STATE ----
   let visits = JSON.parse(localStorage.getItem('ho_visits') || '[]');
   let notifications = JSON.parse(localStorage.getItem('ho_notifs') || '[]');
 
-  // ---- INIT ----
   document.addEventListener('DOMContentLoaded', () => {
     setDate();
     setDefaultTime();
@@ -1046,9 +836,8 @@
       now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
   }
 
-  // ---- NAVIGATION ----
   const pageTitles = {
-    dashboard: ['Dashboard', 'Good morning — here\'s today\'s overview'],
+    dashboard: ['Dashboard', "Good morning — here's today's overview"],
     visits: ['Visit Log', 'All student visits recorded this week'],
     notifications: ['Notifications', 'Send and track parent & teacher alerts'],
     reports: ['Reports', 'Weekly summary and health office statistics']
@@ -1059,23 +848,16 @@
     document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
     document.getElementById('page-' + id).classList.add('active');
     document.querySelectorAll('.nav-item').forEach(n => {
-      if (n.textContent.trim().toLowerCase().startsWith(id === 'dashboard' ? '⬜' : id.slice(0,3))) {}
-    });
-    // Highlight nav
-    const navItems = document.querySelectorAll('.nav-item');
-    navItems.forEach(n => {
       if (n.getAttribute('onclick').includes(id)) n.classList.add('active');
     });
     const [title, sub] = pageTitles[id];
     document.getElementById('page-title').textContent = title;
     document.getElementById('page-sub').textContent = sub;
-
-    if (id === 'reports') { renderReports(); }
-    if (id === 'visits') { renderVisitsTable(); }
-    if (id === 'notifications') { renderNotifLog(); }
+    if (id === 'reports') renderReports();
+    if (id === 'visits') renderVisitsTable();
+    if (id === 'notifications') renderNotifLog();
   }
 
-  // ---- MODAL ----
   function openLogModal() {
     document.getElementById('log-modal').classList.add('open');
     setDefaultTime();
@@ -1089,7 +871,6 @@
     if (e.target === this) closeModal();
   });
 
-  // ---- SAVE VISIT ----
   function saveVisit() {
     const first = document.getElementById('v-first').value.trim();
     const last = document.getElementById('v-last').value.trim();
@@ -1129,7 +910,6 @@
       showBanner(`Notification sent to parent of ${visit.name}`);
     }
 
-    // Reset form
     ['v-first','v-last','v-notes'].forEach(id => document.getElementById(id).value = '');
     document.getElementById('v-notify').checked = false;
     document.getElementById('v-grade').value = '9th';
@@ -1145,7 +925,6 @@
     showToast(`✓ Visit logged for ${visit.name}`);
   }
 
-  // ---- DISCHARGE ----
   function dischargeVisit(id) {
     const visit = visits.find(v => v.id === id);
     if (visit && !visit.timeOut) {
@@ -1168,7 +947,6 @@
     showToast('Visit removed');
   }
 
-  // ---- RENDER DASHBOARD VISITS ----
   function renderDashboardVisits() {
     const tbody = document.getElementById('dashboard-visits-table');
     const recent = visits.slice(0, 5);
@@ -1186,17 +964,14 @@
     `).join('');
   }
 
-  // ---- RENDER VISITS TABLE ----
   function renderVisitsTable() {
     const tbody = document.getElementById('visits-table-body');
     const filter = document.getElementById('filter-reason')?.value || '';
     const filtered = filter ? visits.filter(v => v.reason === filter) : visits;
-
     if (!filtered.length) {
       tbody.innerHTML = `<tr><td colspan="8"><div class="empty-state"><div class="empty-icon">📋</div><p>No visits found.</p></div></td></tr>`;
       return;
     }
-
     tbody.innerHTML = filtered.map(v => `
       <tr>
         <td><div class="td-name">${v.name}</div></td>
@@ -1216,7 +991,6 @@
     `).join('');
   }
 
-  // ---- NOTIFICATIONS ----
   function sendNotification() {
     const student = document.getElementById('notif-student').value.trim();
     const message = document.getElementById('notif-message').value.trim();
@@ -1253,12 +1027,10 @@
     const log = document.getElementById('notif-log');
     const badge = document.getElementById('notif-count-badge');
     badge.textContent = notifications.length + ' sent';
-
     if (!notifications.length) {
       log.innerHTML = `<div class="empty-state"><div class="empty-icon">🔔</div><p>No notifications sent yet.</p></div>`;
       return;
     }
-
     log.innerHTML = notifications.slice(0, 10).map(n => `
       <div class="notif-item">
         <div class="notif-dot ${n.sent ? 'sent' : 'pending'}"></div>
@@ -1274,7 +1046,6 @@
     `).join('');
   }
 
-  // ---- REPORTS ----
   function renderReports() {
     const total = visits.length;
     const unique = [...new Set(visits.map(v => v.name))].length;
@@ -1284,46 +1055,35 @@
     document.getElementById('rpt-unique').textContent = unique;
     document.getElementById('rpt-notifs').textContent = notifCount;
 
-    // Reasons
     const reasons = {};
     visits.forEach(v => { reasons[v.reason] = (reasons[v.reason] || 0) + 1; });
     const maxR = Math.max(...Object.values(reasons), 1);
     const rptBar = document.getElementById('report-bar-chart');
-    if (!total) {
-      rptBar.innerHTML = '<p style="font-size:0.78rem;color:var(--muted);">Log visits to generate report data.</p>';
-    } else {
-      rptBar.innerHTML = Object.entries(reasons).sort((a,b) => b[1]-a[1]).map(([r, c]) => `
+    rptBar.innerHTML = !total ? '<p style="font-size:0.78rem;color:var(--muted);">Log visits to generate report data.</p>' :
+      Object.entries(reasons).sort((a,b) => b[1]-a[1]).map(([r, c]) => `
         <div class="bar-row">
           <span class="bar-label">${r}</span>
           <div class="bar-track"><div class="bar-fill" style="width:${(c/maxR)*100}%"></div></div>
           <span class="bar-count">${c}</span>
         </div>
       `).join('');
-    }
 
-    // Grades
     const grades = {};
     visits.forEach(v => { grades[v.grade] = (grades[v.grade] || 0) + 1; });
     const maxG = Math.max(...Object.values(grades), 1);
     const gBar = document.getElementById('report-grade-chart');
-    if (!total) {
-      gBar.innerHTML = '<p style="font-size:0.78rem;color:var(--muted);">Log visits to generate report data.</p>';
-    } else {
-      gBar.innerHTML = ['9th','10th','11th','12th'].filter(g => grades[g]).map(g => `
+    gBar.innerHTML = !total ? '<p style="font-size:0.78rem;color:var(--muted);">Log visits to generate report data.</p>' :
+      ['9th','10th','11th','12th'].filter(g => grades[g]).map(g => `
         <div class="bar-row">
           <span class="bar-label">Grade ${g}</span>
           <div class="bar-track"><div class="bar-fill" style="width:${((grades[g]||0)/maxG)*100}%"></div></div>
           <span class="bar-count">${grades[g]||0}</span>
         </div>
       `).join('');
-    }
 
-    // Report table
     const tbody = document.getElementById('report-table-body');
-    if (!total) {
-      tbody.innerHTML = `<tr><td colspan="6"><div class="empty-state"><div class="empty-icon">📊</div><p>No data yet.</p></div></td></tr>`;
-    } else {
-      tbody.innerHTML = visits.map(v => `
+    tbody.innerHTML = !total ? `<tr><td colspan="6"><div class="empty-state"><div class="empty-icon">📊</div><p>No data yet.</p></div></td></tr>` :
+      visits.map(v => `
         <tr>
           <td><div class="td-name">${v.name}</div></td>
           <td><span class="badge badge-gray">${v.grade}</span></td>
@@ -1333,10 +1093,8 @@
           <td>${statusBadge(v.status)}</td>
         </tr>
       `).join('');
-    }
   }
 
-  // ---- REASON CHART (dashboard) ----
   function renderReasonChart() {
     const reasons = {};
     visits.forEach(v => { reasons[v.reason] = (reasons[v.reason] || 0) + 1; });
@@ -1355,24 +1113,18 @@
     `).join('');
   }
 
-  // ---- STATS ----
   function updateStats() {
     const today = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     const todayV = visits.filter(v => v.date === today).length;
     const unique = [...new Set(visits.map(v => v.name))].length;
-
     document.getElementById('stat-today').textContent = todayV;
     document.getElementById('stat-week').textContent = visits.length;
     document.getElementById('stat-notifs').textContent = notifications.length;
     document.getElementById('stat-students').textContent = unique;
   }
 
-  // ---- PRINT ----
-  function printReport() {
-    window.print();
-  }
+  function printReport() { window.print(); }
 
-  // ---- HELPERS ----
   function statusBadge(status) {
     const map = {
       'returned': ['badge-green', 'Returned to Class'],
